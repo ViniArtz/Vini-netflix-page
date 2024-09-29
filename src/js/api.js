@@ -3,7 +3,7 @@
 export const BASE_URL_SERIES = 'https://api.themoviedb.org/3/tv';
 export const BASE_URL_MOVIE = 'https://api.themoviedb.org/3/movie';
 export const URL_IMAGE = 'https://image.tmdb.org/t/p/w300';
-export const API_TOKEN = '' //Your token here
+export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1MmI4MjZkYTY1NTdiMGZkZTM3YmU4ZWEzNTJkZWFhOSIsIm5iZiI6MTcyNzM5MTc0My40MTU4MDgsInN1YiI6IjY2ZjQ4ZDBlNGZkNGViZTIyNDBlMGVkZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rtdFFXtCkCjTl1SEmJZVgaO32l_Y8xH36E65HqBDPWY' //Your token here
 
 
 // ROTA (filmes populares)

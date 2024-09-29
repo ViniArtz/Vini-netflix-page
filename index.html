@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Aula 17</title>
   </head>
   <body>
-    <main class="container">
-      <header class="cabecalho">
+    <main id="container">
+      <header id="cabecalho">
         <a id="logo" href=""
           ><img src="./src/images/Netflix_icon.png" alt="logo"
         /></a>
-        <ul class="botoes">
-          <li id="botao"><a href="">Melhores Filmes</a></li>
-          <li id="botao"><a href="">Séries no ar</a></li>
-          <li id="botao"><a href="">Filmes Top 10</a></li>
+        <ul id="botoes">
+          <li id="botao"><button>Mais assistidos</button></li>
+          <li id="botao"><button>Filmes top 10</button></li>
+          <li id="botao"><button>Séries no Ar</button></li>
         </ul>
       </header>
-      <!-- <ul id="movies"></ul>
+      <ul id="movies"></ul>
       <ul id="moviesRated"></ul>
-      <ul id="seriesOnAir"></ul> -->
+      <ul id="seriesOnAir"></ul>
     </main>
 
-    <script type="module" src="./src/js/app.js"></script>
+    <!-- <script type="module" src="./src/js/app.js"></script> -->
   </body>
 </html>

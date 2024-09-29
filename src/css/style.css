@@ -1,0 +1,55 @@
+body {
+  font-family: "poppins", sans-serif;
+  /* max-width: 1440px; */
+  background-color: #564d4d;
+}
+#container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "movies movies movies movies"
+    "moviesRated moviesRated moviesRated moviesRated"
+    "seriesOnAir seriesOnAir seriesOnAir seriesOnAir";
+}
+
+#cabecalho {
+  grid-area: header;
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  padding: 50px;
+  background-color: #161a1d;
+}
+
+#cabecalho #logo img {
+  width: 100px;
+  transition: 1s;
+}
+#cabecalho #logo:hover img{
+    width: 120px;
+}
+
+#cabecalho #botoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+#cabecalho #botoes #botao button {
+  color: #e50914;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+#cabecalho #botoes #botao:hover button {
+    color: white;
+    background-color: #e50914;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
