@@ -1,0 +1,48 @@
+// const inputCep = document.querySelector('#cep')
+// const btnCep = document.querySelector('#btn')
+// const resultadoCep = document.querySelector('.resultado')
+
+// btnCep.addEventListener('click',async(e) =>{
+//     function buscarCEP() {
+//     return fetch(`https://viacep.com.br/ws/${inputCep.value}/json/`)
+// }
+//     // console.log("iniciou........");
+//     try {
+//         const response = await buscarCEP()
+//         const json = await response.json()
+//         resultadoCep.innerHTML = `
+//         <li>
+//         <h2>Logradouro:${json.logradouro}</h2>
+//         <p>Cep: ${json.cep}</p>
+//         <p>cidade: ${json.localidade} </p>
+//         <p>Estado: ${json.uf}</p>
+//         <p>Bairro: ${json.bairro}</p>
+//     </li>
+//         `
+//         console.log(json);
+//     } catch (error) {   
+//         console.log(error);
+//     }
+
+//     // console.log("finalizou........");
+// })
+
+
+// const BASE_URL = 'https://api.themoviedb.org'
+// const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZjA0ODg3Y2U1ZmE5MDU3YzVjY2JjYzM3YjQyYjc5YiIsIm5iZiI6MTcyNzMwNjYzMS43MDE1OTEsInN1YiI6IjY2ZjQ5MWY4NzA5MWQ1NzU1ZDZhMjgxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.WZgAFoyCCVPDesUdptY5WfyTo__u8rcO90TpHQUuebI'
+
+// // Rotas - Filmes Populares
+
+// async function getPopularMovies(){
+//     const response = await fetch(`${BASE_URL}/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`, {
+//         method: 'GET',
+//         headers:{
+//             accept: 'application/json',
+//             Authorization: `Bearer ${API_TOKEN}`
+//         }
+//     })
+//     const movies = await response.json()
+//     console.log(movies);
+// }
+
+// getPopularMovies()
