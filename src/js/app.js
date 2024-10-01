@@ -32,8 +32,15 @@ async function movieMoreRated() {
 
     movies.results.forEach(movie => {
         li += `
-        <img src="${URL_IMAGE}${movie.poster_path}" alt="">
-        <h2> ${movie.title} <h2>
+        <li id="movietop">
+        <a href=""
+          ><img
+            src="${URL_IMAGE}${movie.poster_path}"
+            alt="poster do filme"
+        /></a>
+        <hr />
+        <h3>${movie.title}</h3>
+      </li>
         `
     });
 
