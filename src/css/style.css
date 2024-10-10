@@ -7,12 +7,13 @@ body {
 #container {
   display: grid;
   grid-template-areas:
-    "header header header header"
-    "more more more more"
-    "movies movies movies movies"
-    "topRated topRated topRated topRated"
-    "moviesRated moviesRated moviesRated moviesRated"
-    "seriesOnAir seriesOnAir seriesOnAir seriesOnAir";
+    "header header header"
+    "more more more"
+    "movies movies movies"
+    "topRated topRated topRated"
+    "movies10s movies10 movies10"
+    "titulo titulo titulo"
+    "series-no-ar series-no-ar series-no-ar";
 }
 
 /* Cabeçalho */
@@ -21,7 +22,7 @@ body {
   grid-area: header;
   box-shadow: 3px 3px 40px rgb(0, 0, 0, 60%);
   overflow: hidden;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +74,7 @@ body {
 
 #mais-assistidos {
   grid-area: movies;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -84,31 +85,66 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 90%;
   gap: 30px;
 }
 
-#movie {
-  transition: 1s;
+#mais-assistidos #movies #movie {
+  display: flex;
+  background-color: #0b090a;
+  transition: 0.4s;
 }
-#movie:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
+#movie #movie-card {
+  width: 400px;
+}
+#movie #movie-card img {
+  width: 100%;
 }
 
-#mais-assistidos hr {
+#movie #movie-card hr {
   border: 3px solid #e50914;
-  width: 300px;
+  width: 100%;
 }
 
-#mais-assistidos #movies h3 {
+#movie #movie-card h3 {
   color: #f5f3f4;
-  width: 300px;
+  width: 100%;
   text-align: center;
   font-size: 1rem;
   background-color: #660708;
 }
 
+#movie #sinopse {
+  display: none;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  background-color: #0b090a;
+  transition: 0.5s ease;
+}
+
+#movie #sinopse h5 {
+  font-size: 1.3rem;
+  color: #e50914;
+}
+
+#movie #sinopse p {
+  color: #f5f3f4;
+  font-size: 0.7rem;
+}
+
+#movie #sinopse span {
+  font-size: 1.1rem;
+  color: #f5f3f4;
+}
+#movie #sinopse span b {
+  color: #e50914;
+}
+
+#movie:hover {
+  transform: scale(1.05);
+}
 /* Filmes Top 10 */
 
 #topRated {
@@ -120,40 +156,87 @@ body {
   margin: 30px;
 }
 
-#filmes-top-10 {
-  grid-area: moviesRated;
-  grid-template-rows: repeat(4, 1fr);
+#top-10 {
+  grid-area: movies10;
+  grid-template-rows: repeat(3, 1fr);
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-#filmes-top-10 #moviesRated {
+#top-10 #movies-10 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 90%;
   gap: 30px;
 }
 
 #movietop {
-  transition: 1s;
+  transition: 0.5s;
 }
 #movietop:hover {
   transform: scale(1.05);
-  opacity: 0.8;
 }
 
-#filmes-top-10 hr {
+#movietop #movie-top-card {
+  width: 400px;
+}
+#movietop #movie-top-card img {
+  width: 100%;
+}
+
+#movietop #movie-top-card hr {
   border: 3px solid #e50914;
-  width: 300px;
+  width: 100%;
 }
 
-#filmes-top-10 #moviesRated h3 {
+#movietop #movie-top-card h3 {
   color: #f5f3f4;
-  width: 300px;
   text-align: center;
   font-size: 1rem;
   background-color: #660708;
+}
+
+#movietop #sinopse-top {
+  display: none;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 60%;
+  padding: 20px;
+  background-color: #0b090a;
+  transition: 0.5s ease;
+}
+
+#movietop #sinopse-top h5 {
+  font-size: 1.3rem;
+  color: #e50914;
+}
+
+#movietop #sinopse-top p {
+  color: #f5f3f4;
+  font-size: 0.7rem;
+}
+
+#movietop #sinopse-top span {
+  font-size: 1.1rem;
+  color: #f5f3f4;
+}
+#movietop #sinopse-top span b {
+  color: #e50914;
+}
+
+/* Séries no Ar */
+#titulo-series {
+  grid-area: titulo;
+  text-align: center;
+  color: #f5f3f4;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 30px;
+}
+#series-no-ar {
+  grid-area: series-no-ar;
+  grid-template-rows: repeat(3, 1fr);
 }

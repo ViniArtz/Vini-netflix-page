@@ -31,29 +31,41 @@
       <div id="mais-assistidos">
         <ul id="movies">
           <!-- <li id="movie">
-            <a href=""><img src="${URL_IMAGE}${movie.poster_path}" alt="poster do filme"/></a>
-            <hr>
-            <h3>${movie.title}</h3>
-          </li> -->
+            <div id="movie-card">
+              <a href=""><img src="${URL_IMAGE}${movie.poster_path}" alt="poster do filme"/></a>
+              <hr>
+              <h3>${movie.title}</h3>
+            </div>
+            <div class="desc-more ativa">
+            <h5>${movie.title}</h5>
+            <p>${movie.overview}</p>
+            <span>${movie.popularity}</span>
+            </div>
+            </li> -->
         </ul>
       </div>
       <h2 id="topRated">Top 10 Filmes</h2>
-      <div id="filmes-top-10">
-        <ul id="moviesRated">
-          <!-- <li id="movie">
-            <a href=""
+      <div id="top-10">
+        <ul id="movies-10">
+          <!-- <li id="movietop">
+            <div id="movie-top-card">
+              <a href=""
               ><img
                 src="${URL_IMAGE}${movie.poster_path}"
                 alt="poster do filme"
             /></a>
             <hr />
             <h3>${movie.title}</h3>
+            </div>
+            <div id="sinopse-top">
+              <h5>${movie.title}</h5>
+              <p>${movie.overview}</p>
+              <span>${movie.popularity}</span>
+            </div>
           </li> -->
         </ul>
       </div>
-      <!-- <ul id="seriesOnAir"></ul> -->
     </main>
-
     <script type="module" src="./src/js/app.js"></script>
   </body>
 </html>
