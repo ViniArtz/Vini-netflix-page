@@ -26,7 +26,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 80%;
   padding: 50px;
   background-color: #0b090a;
 }
@@ -43,21 +42,23 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  
 }
 
-#cabecalho #botoes #botao button {
+#cabecalho #botoes button{
   color: #e50914;
   font-size: 1.2rem;
   font-weight: 700;
   transition: 0.5s;
-}
-
-#cabecalho #botoes #botao:hover button {
-  color: white;
-  background-color: #e50914;
+  margin: 10px;
   padding: 10px;
   border-radius: 30px;
+}
+
+#cabecalho #botoes button:hover {
+  color: white;
+  background-color: #e50914;
+
 }
 
 /* Mais Assistidos */
@@ -224,4 +225,42 @@ body {
 }
 #movietop #sinopse-top span b {
   color: #e50914;
+}
+
+#final {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: hsl(330, 10%, 4%, 80%);
+  gap: 30px;
+}
+#final article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#final a {
+  color: #f5f3f4;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+#final a:hover {
+  color: #f5f3f4;
+  background-color: #e50914;
+}
+
+#final img {
+  width: 200px;
+}
+#final p {
+  color: #f5f3f4;
+  font-size: 0.7rem;
 }

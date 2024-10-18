@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,18 +20,17 @@
     <title>Projeto Netflix</title>
   </head>
   <body>
+    <!-- Menu de navegação da página -->
+    <nav id="cabecalho">
+      <a id="logo" href=""
+        ><img src="./src/images/Netflix_icon.png" alt="logo"
+      /></a>
+      <ul id="botoes">
+        <li id="botao"><button href="#movies">Mais assistidos</button></li>
+        <li id="botao"><button href="#moviesRated">Filmes top 10</button></li>
+      </ul>
+    </nav>
     <main id="container">
-      <!-- Menu de navegação da página -->
-      <header id="cabecalho">
-        <a id="logo" href=""
-          ><img src="./src/images/Netflix_icon.png" alt="logo"
-        /></a>
-        <ul id="botoes">
-          <li id="botao"><button href="#movies">Mais assistidos</button></li>
-          <li id="botao"><button href="#moviesRated">Filmes top 10</button></li>
-          <li id="botao"><button href="#seriesOnAir">Séries no Ar</button></li>
-        </ul>
-      </header>
       <h2 id="more">Os Mais assistidos</h2>
       <!-- Div onde será gerado os filmes mais assistidos da api -->
       <div id="mais-assistidos">
@@ -42,6 +42,17 @@
         <ul id="movies-10"></ul>
       </div>
     </main>
+    <footer id="final">
+      <a href="https://www.themoviedb.org/?language=pt-BR" target="_blank"
+        >Clique para Ver a Api Utilizada</a
+      >
+      <article>
+        <figure>
+          <img src="./src/images/VA DZN.png" alt="logo-VA" />
+        </figure>
+        <p>Projeto Feito por Paulo Vinicius Teixeira</p>
+      </article>
+    </footer>
     <script type="module" src="./src/js/app.js"></script>
   </body>
 </html>

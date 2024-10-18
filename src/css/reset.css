@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+a::after {
+  color: none;
+}
+
 button {
   border: none;
   background: none;

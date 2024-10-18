@@ -1,0 +1,161 @@
+@media (max-width: 840px) {
+  #cabecalho {
+    display: flex;
+  }
+
+  #more {
+    font-size: 2rem;
+  }
+
+  #mais-assistidos #movies {
+    margin: 20px;
+  }
+
+  #movie #movie-card {
+    width: 250px;
+  }
+  #movie #movie-card img {
+    width: 100%;
+  }
+
+  #movie #movie-card h3 {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  #movie #sinopse {
+    top: 60px;
+    height: 60%;
+  }
+
+  #movie #sinopse h5 {
+    font-size: 1rem;
+    color: #e50914;
+  }
+
+  #movie #sinopse p {
+    color: #f5f3f4;
+    font-size: 0.5rem;
+  }
+
+  #movie #sinopse span {
+    font-size: 0.7rem;
+    color: #f5f3f4;
+  }
+  #movie #sinopse span b {
+    color: #e50914;
+  }
+
+  #topRated {
+    font-size: 2rem;
+  }
+
+  #movietop #movie-top-card {
+    width: 250px;
+  }
+
+  #movietop #movie-top-card h3 {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  #movietop #sinopse-top {
+    top: 50px;
+    height: 70%;
+  }
+
+  #movietop #sinopse-top h5 {
+    font-size: 0.8rem;
+    color: #e50914;
+  }
+
+  #movietop #sinopse-top p {
+    color: #f5f3f4;
+    font-size: 0.5rem;
+  }
+
+  #movietop #sinopse-top span {
+    font-size: 0.6rem;
+    color: #f5f3f4;
+  }
+}
+
+@media (max-width: 478px) {
+  #cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #more {
+    font-size: 2rem;
+  }
+
+  #mais-assistidos #movies {
+    margin: 5px;
+  }
+
+  #movie #movie-card {
+    width: 150px;
+  }
+  #movie #movie-card img {
+    width: 100%;
+  }
+
+  #movie #movie-card h3 {
+    font-size: 0.6rem;
+  }
+
+  #movie #sinopse {
+    top: 60px;
+    height: 60%;
+  }
+
+  #movie #sinopse h5 {
+    font-size: 0.5rem;
+    color: #e50914;
+  }
+
+  #movie #sinopse p {
+    color: #f5f3f4;
+    font-size: 0.3rem;
+  }
+
+  #movie #sinopse span {
+    font-size: 0.4rem;
+    color: #f5f3f4;
+  }
+
+  #topRated {
+    font-size: 2rem;
+  }
+
+  #movietop #movie-top-card {
+    width: 150px;
+  }
+
+  #movietop #movie-top-card h3 {
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  #movietop #sinopse-top {
+    top: 30px;
+    height: 70%;
+  }
+
+  #movietop #sinopse-top h5 {
+    font-size: 0.5rem;
+    color: #e50914;
+  }
+
+  #movietop #sinopse-top p {
+    color: #f5f3f4;
+    font-size: 0.3rem;
+  }
+
+  #movietop #sinopse-top span {
+    font-size: 0.4rem;
+    color: #f5f3f4;
+  }
+}
